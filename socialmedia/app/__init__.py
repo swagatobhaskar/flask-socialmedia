@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 from .extensions import db
 from .home.routes import home_bp
 
-from instance.config import DevConfig
+from config import DevConfig
 
 migrate = Migrate()
 
