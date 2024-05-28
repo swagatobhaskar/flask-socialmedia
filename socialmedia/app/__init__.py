@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_migrate import Migrate
 
-from .extensions import db
+from extensions import db
 from .home.routes import home_bp
 
 from config import DevConfig
