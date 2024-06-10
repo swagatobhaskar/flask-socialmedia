@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %} {% endblock %}</title>
+    </head>
+    <body>
+        <nav style="color:rgb(69, 175, 213); width: 80%; height: 100px;">
+            <!-- navigation menu will go in here -->
+        </nav>
+        <div>
+            {% block body_content %} {% endblock %}
+        </div>
+    </body>
+    <footer>
+        <!-- footer will go in here -->
+    </footer>
+</html>
