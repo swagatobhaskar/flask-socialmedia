@@ -5,3 +5,7 @@ user_bp = Blueprint('main', __name__)
 @user_bp.route("/")
 def home():
     return "<p> Hello, World!</p>"
+
+@user_bp.route("profile/<id>")
+def profile():
+    pass
