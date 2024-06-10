@@ -2,7 +2,8 @@ from flask import Flask
 from flask_migrate import Migrate
 
 from extensions import db
-from .home.routes import home_bp
+from .models.user_profile import User, Profile
+from .user.routes import user_bp
 
 from config import DevConfig
 
@@ -21,4 +22,4 @@ def create_app():
     return app
 
 def reg_blueprints(app):
-    app.register_blueprint(home_bp)
+    app.register_blueprint(user_bp)
