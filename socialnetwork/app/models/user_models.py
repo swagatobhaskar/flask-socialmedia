@@ -52,4 +52,4 @@ class Profile(db.Model):
     user = db.relationship('User', back_populates='profile')
 
     def __repr__(self):
-        return f"{self.f_name} {self.l_name} - {self.sex}"
+        return f"{self.first_name} {self.last_name} - {self.sex}"
