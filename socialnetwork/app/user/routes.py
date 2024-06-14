@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, request, url_for
+from flask import Blueprint, render_template, redirect, request, url_for, session
 
 from app.models.user_models import User, Profile
 from .forms.login_form import LoginForm
