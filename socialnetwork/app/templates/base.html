@@ -10,23 +10,16 @@
     </head>
     <body class="flex flex-col min-h-screen">
         <header>
-        <!-- logo place -->
+            <!-- logo and navigation -->
         </header>
         <nav class="w-full h-14 bg-sky-500">
-            <!-- navigation menu will go in here -->
+            <!-- further navigation menu will go in here -->
         </nav>
         <main class="w-auto mx-5 flex-grow">
             {% block content %} {% endblock %}
         </main>
         <footer class="h-20 w-full bg-sky-600">
-            <div class="container mx-auto px-4">
-                <!-- footer will go in here -->
-                <!-- <img src="{{ url_for('static', filename='me.png') }}" alt="root-static" height="200" width="150" /> -->
-                <div class="flex justify-between items-center h-full">
-                    <p class="text-white text-lg">© Swagato's Social Network. All rights reserved.</p>
-                    <p>Links: ...</p>
-                </div>
-            </div>
+            {% include('footer.html') %}
         </footer>
     </body>
 </html>
