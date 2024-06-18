@@ -5,8 +5,8 @@ from flask_wtf.csrf import CSRFProtect
 from extensions import db
 from .models.user_models import User, Profile
 
-from .home.routes import home_bp
-from .user.routes import user_bp
+from .blueprints.home.routes import home_bp
+from .blueprints.user.routes import user_bp
 
 from config import DevConfig
 
