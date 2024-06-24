@@ -3,8 +3,31 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
- <h1 class="font-mono text-green-400">
-    This is the home page of my Social networking Application.
- </h1>
+   <div class="bg-green-300">
+      <div class="m-10 p-10 flex flex-row rounded-md">
+         <div class="basis-3/4">
+            <h1 class="font-mono text-slate-950">
+               This is the home page of my Social networking Application.
+            </h1>
+         </div>
+         <div class="basis-1/4 border-l-2 border-x-blue-600 w-full mx-auto">
+            <form method="POST" action="/login">
+               {{ form.csrf_token }}
+               <p>
+                  {{ form.username.label }} {{ form.username(size=20) }}
+               </p>
+               <p>
+                  {{ form.email.label }} {{ form.username(size=20) }}
+               </p>
+               <p>
+                  {{ form.password.label }} {{ form.password(size=20) }}
+               </p>
+               <p>
+                  <input type="submit" value="Login">
+               </p>
+           </form>
+         </div>
+      </div>
+   </div>
  <!-- <img src="{{ url_for('home.static', filename='happy-cat.jpg') }}" alt="happy-cat" height="300" width="200" /> -->
 {% endblock %}
